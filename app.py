@@ -22,9 +22,11 @@ client = MongoClient(
 )
 db = client.chatbot_db
 collection = db.qa_pairs  # Replace with your collection name
+collection_experimental_solution = db.qa_pairs_experimental_solution
 
 # Fetch all documents from the MongoDB collection
-all_documents = list(collection.find())
+all_documents = list(collection.find()) + list(collection_experimental_solution.find())
+
 
 # Extract questions and responses
 questions = [doc['question'] for doc in all_documents]
@@ -44,6 +46,7 @@ def chatbot():
 
     # Extract user's query from the request
     user_query = data.get('query', '')
+    print(user_query)
 
     # Calculate TF-IDF vector for the user's query
     user_query_tfidf = vectorizer.transform([user_query])
