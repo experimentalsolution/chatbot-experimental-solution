@@ -59,7 +59,7 @@ def chatbot():
     if similarity_score > 30:
         response = responses[most_similar_index]
     else:
-        response ='Not sure I understood you and my knowledge is limited as of now.My boss has not allowed me for advance search from internet.Please ask him to enable so that I can help you'
+        response ="Sorry Not understood.I can't search online. Please ask Satish Gupta for permission."
 
     # Retrieve the response corresponding to the most similar question
     
