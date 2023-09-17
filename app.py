@@ -64,7 +64,7 @@ def chatbot():
     if similarity_score > 50:
         response = responses[most_similar_index]
     else:
-        response ="Sorry Not understood.I have made a note , will improve myself and get an answer for you in future."
+        response ="Sorry Not understood.I have made a note , will improve myself and get an answer for you in future if it is a relevant question."
         collection_question_not_answered.insert_one(data)
         print('data inserted')
 
