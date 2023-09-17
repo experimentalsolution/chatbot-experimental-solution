@@ -23,6 +23,8 @@ client = MongoClient(
 db = client.chatbot_db
 collection = db.qa_pairs  # Replace with your collection name
 collection_experimental_solution = db.qa_pairs_experimental_solution
+collection_question_not_answered=db.qa_pairs_not_answered
+
 
 # Fetch all documents from the MongoDB collection
 all_documents = list(collection.find()) + list(collection_experimental_solution.find())
@@ -63,6 +65,8 @@ def chatbot():
         response = responses[most_similar_index]
     else:
         response ="Sorry Not understood.I can't search online. Please ask Satish Gupta for permission."
+        collection_question_not_answered.insert_one(data)
+        print('data inserted')
 
     # Retrieve the response corresponding to the most similar question
     
