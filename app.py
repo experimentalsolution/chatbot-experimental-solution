@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Replace with your MongoDB Atlas URI
-MONGO_URI = "mongodb+srv://experimentalsolution:0NpbKpk1ZcAKGWEN@cluster0.jhdtvgm.mongodb.net/?retryWrites=true&w=majority"
+MONGO_URI = ""
 
 # Initialize MongoDB client
 client = MongoClient(
