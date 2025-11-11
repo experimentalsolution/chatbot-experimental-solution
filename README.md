@@ -35,7 +35,7 @@ Queries that cannot be answered are logged for future improvements.
 Open your terminal and run:
 
 ```
-git clone https://github.com/experimentalsolution/chatbot-experimental-solution.git
+git clone https://github.com/experimentalsolution/chatbot-experimental-solution.git 
 cd my-project
 ```
 
