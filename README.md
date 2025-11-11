@@ -80,31 +80,33 @@ Response example:
 
 ## How It Works
 
--Fetches all questions and responses from MongoDB.
--Converts questions into vectors using TF-IDF.
--Compares the user query to stored questions with cosine similarity.
--Returns the matched response if similarity > 50%.
--Logs queries that cannot be answered to qa_pairs_not_answered.
+- Fetches all questions and responses from MongoDB.
+- Converts questions into vectors using TF-IDF.
+- Compares the user query to stored questions with cosine similarity.
+- Returns the matched response if similarity > 50%.
+- Logs queries that cannot be answered to qa_pairs_not_answered.
 
 ### Future Improvements
 
--Add machine learning models for better query understanding
--Implement intent classification
--Build a frontend UI for live interaction
--Enable real-time learning from unanswered queries
+- Add machine learning models for better query understanding
+- Implement intent classification
+- Build a frontend UI for live interaction
+- Enable real-time learning from unanswered queries
 
 ## Dependencies
 
--Flask
--Flask-CORS
--pymongo
--scikit-learn
+- Flask
+- Flask-CORS
+- pymongo
+- scikit-learn
 
 ## Install dependencies:
 ```python
 pip install flask flask-cors pymongo scikit-learn
 ```
+Live demo is created  [here](https://experimentalsolution.github.io/explore/#/home) on a angular front end .It is deployed .
+Please  check it out and share your feedback .
 
-License
+## License
 
 MIT License
