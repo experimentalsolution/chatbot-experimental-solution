@@ -35,7 +35,7 @@ Queries that cannot be answered are logged for future improvements.
 Open your terminal and run:
 
 ```
-git clone https://github.com/your-username/my-project.git
+git clone https://github.com/experimentalsolution/chatbot-experimental-solution.git
 cd my-project
 ```
 
@@ -104,6 +104,7 @@ Response example:
 ```python
 pip install flask flask-cors pymongo scikit-learn
 ```
+## Demo
 [Live demo is created here](https://experimentalsolution.github.io/explore/#/home)  on a angular front end .It is deployed .
 Please  check it out and share your feedback .
 
