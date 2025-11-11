@@ -104,7 +104,7 @@ Response example:
 ```python
 pip install flask flask-cors pymongo scikit-learn
 ```
-Live demo is created  [here](https://experimentalsolution.github.io/explore/#/home) on a angular front end .It is deployed .
+[Live demo is created here](https://experimentalsolution.github.io/explore/#/home)  on a angular front end .It is deployed .
 Please  check it out and share your feedback .
 
 ## License
